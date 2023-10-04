@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Gentium+Book+Plus&family=Open+Sans:wght@300&family=Raleway&display=swap');
+
+body {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-top: 3%;
+
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1:hover {
+  color: #ff0000;
+  font-style: italic;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.logo {
+  width: 60px; /* Adjust logo size */
+  height: 60px; /* Adjust logo size */
+}
+
+.logo img {
+  width: 64px;
+  height: auto;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.content {
+  margin: 0 auto;
+  background-color: rgba(
+    113,
+    113,
+    113,
+    0.7
+  ); /* Slightly white background color */
+  padding: 30px; /* Add some space around the text */
+  border-radius: 0px; /* Rounded corners */
+  max-width: 900px;
+}
+
+.search-form {
+  max-width: 200px;
+  display: flex;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 0px 0 0 0px;
+}
+
+.search-form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #575757;
+  cursor: pointer;
+  color: white;
+  border-radius: 0 0px 0px 0;
+}
+
+.search-form button:hover {
+  background-color: #ff0000;
+}
+
+.search-form i.fa-search {
+  margin: 0;
+}
+
+.w3-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+
+#dekningskart {
+    height: 900px;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row; /* stacks children (forms) vertically */
+}
+
+.iframeblock .i-frame-block-container {
+  filter: grayscale(100%); /* Turns the content black and white */
+  transition: filter 0.3s ease; /* Adds a smooth transition */
+  margin-top: 30px;
+}
+
+.iframeblock .i-frame-block-container:hover {
+  filter: none; /* Removes the filter on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none; /* Removing default underline */
+  font-weight: 600;
+  padding: 5px 10px; /* Providing a little padding */
+  transition: all 0.3s ease; /* Adding transition effect for smooth changes */
+}
+
+a:hover {
+  background-color: #ff0000; /* Changing background color on hover */
+  color: #ffffff; /* Text color to white on hover */
+}
+
+
+
+@media (max-width: 768px) { /* for smaller screens */
+    .search-form input {
+        width: 100%; /* make input fields take full width */
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column; /* stacks children (forms) vertically */
+        gap: 10px; /* space between forms */
+    }
+
+    .search-form {
+        max-width: 100%;
+
+      }
+
+      .iframeblock .i-frame-block-container {
+        filter: none; /* Display in color on mobile */
+    }
+}
+

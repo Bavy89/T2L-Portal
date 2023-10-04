@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T2L Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; background-color: #575757;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a href="#introduksjon" class="w3-bar-item w3-button">Introduksjon</a>
+        <a href="#Dekning" class="w3-bar-item w3-button">Dekning</a>
+        <a href="#Linker" class="w3-bar-item w3-button">Linker</a>
+        <a href="#" class="w3-bar-item w3-button">Link 4</a>
+        <a href="#" class="w3-bar-item w3-button">Link 5</a>
+        <a href="#" class="w3-bar-item w3-button">Link 6</a>
+        <a href="#" class="w3-bar-item w3-button">Link 7</a>
+        <a href="#" class="w3-bar-item w3-button">Link 8</a>
+        <a href="#" class="w3-bar-item w3-button">Link 9</a>
+      </div>
+      
+      <div class="w3-main" style="margin-left:200px">
+      <div class="w3-teal" style="background-color: #575757 !important;">
+        <button class="w3-button w3-teal w3-xlarge w3-hide-large" style="background-color: #575757 !important;" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+        </div>
+      </div>
+    
+    <div class="container">
+      <div class="logo">
+        <img src="techlogo.png" alt="Logo" />
+      </div>
+      <h1>T2L Portal</h1>
+    </div>
+
+
+<hr>
+
+
+    <div class="center-container">
+      <div class="content">
+        <h2 id="introduksjon">Introduksjon</h2>
+        <p>
+          Teknisk 2-linje fungere som et mellomledd mellom ICE
+          kundeservice(1-linje) og ICE SOC (Operations, 3-linje), og håndtere
+          alle typer tekniske problemstillinger kundene måtte oppleve!
+        </p>
+        <p>
+          Vårt oppdrag er å feilsøke sammen med kunde og finne løsninger på
+          tekniske problem. Oppdager vi at problemet kunden opplever grunner seg
+          i en feil hos ICE er vår oppgave å sammenstille problemstillingen på
+          en god måte og melde saken videre til 3-linje.
+        </p>
+        <p>
+          Det er her veldig viktig at vi KUN melder videre reelle feil og
+          forhindrer at ikke-reelle saker havner hos 3-linje. Dette er noen
+          ganger lettere sagt enn gjort men over tid forventes dette bare bli
+          bedre og bedre gjennom at det konsentreres masse kompetanse på vår
+          avdeling og gjennom utbedring av rutiner.
+        </p>
+        <p>
+          Dette forutsetter dog at vi ALLE er fremoverlent og ivrige på å
+          undersøke og lære.
+        </p>
+      </div>
+
+      <div class="form-container">
+        <form class="search-form" style="text-align: left">
+            <input name="T1" size="10" type="text" placeholder="Manny-søk" />
+            <button type="submit" onclick="window.open('https://manny.prod.ice.local/search?tab=customer&amp;q='+this.form.T1.value+'&amp;pageNumber=1');">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    
+        <form class="search-form" style="text-align: left">
+            <input name="T1" size="10" type="text" placeholder="Søk i wiki">
+            <button type="submit" onclick="window.open('https://iceno.freshdesk.com/support/search/solutions?term='+this.form.T1.value);">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    
+        <form class="search-form" style="text-align: left">
+            <input name="T1" size="10" type="text" placeholder="Buck ID">
+            <button type="submit" onclick="window.open('https://iceno.freshdesk.com/a/tickets/'+this.form.T1.value+'');">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+
+        <form class="search-form" style="text-align: left">
+            <input name="T1" size="10" type="text" placeholder="Snow ID">
+            <button type="submit" onclick="window.open('https://iceno.service-now.com/nav_to.do?uri=%2F$sn_global_search_results.do%3Fsysparm_search%3D'+this.form.T1.value+'');">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+
+    </div>
+
+<hr>
+    
+    <div class="content">
+
+      <h2 id="Dekning">Dekning</h2>
+      <p>
+Lurer du på hvordan dekningen til kunder er? dette kan du enkelt sjekke med dekningskartet fra Telia. 
+        </p>
+        <p>
+          Det er her veldig viktig at vi KUN melder videre reelle feil og
+          forhindrer at ikke-reelle saker havner hos 3-linje. Dette er noen
+          ganger lettere sagt enn gjort men over tid forventes dette bare bli
+          bedre og bedre gjennom at det konsentreres masse kompetanse på vår
+          avdeling og gjennom utbedring av rutiner.
+        </p>
+        <p>
+          Dette forutsetter dog at vi ALLE er fremoverlent og ivrige på å
+          undersøke og lære.
+        </p>
+      </div>
+
+      <div class="iframeblock">
+        <div class="i-frame-block-container" data-react-hydrate="ReactHydratedBlocks.IFrameBlock" data-react-hydrate-props='{"Height":500,"Width":"l","AllowFullScreen":false,"Allow":"geolocation","AnchorId":"dekningskart","HeightSettings":[{"MinimalPageWidth":0,"Height":500},{"MinimalPageWidth":766,"Height":500}],"ResolvedUrl":"https://coverage.ddc.teliasonera.net/coverageportal_no?profile=ALL"}'>
+            <iframe id="dekningskart" src="https://coverage.ddc.teliasonera.net/coverageportal_no?profile=ALL" class="iframe-block container container--l" height="500" width="500" allow="geolocation"></iframe>
+
+        </div>
+    </div>
+    
+
+    <div class="content">
+
+      <h2 id="Linker">Linker</h2>
+        <p>
+Trenger du hjelp til å finne riktig vei?         </p>
+        <p>
+Her er noen linker som vi håper kan få deg på riktig sted!
+        </p>
+        <ul>
+          <li><a href="https://example.com/link1">Mtools 2.0</a></li>
+          <li><a href="https://example.com/link2">Kalix</a></li>
+          <li><a href="https://example.com/link3">Service Now</a></li>
+          <li><a href="https://example.com/link4">Telia Service Now</a></li>
+          <li><a href="https://example.com/link5">Buck</a></li>
+          <li><a href="https://example.com/link6">Manny</a></li>
+          <li><a href="https://example.com/link7">NRDB</a></li>
+          <li><a href="https://example.com/link8">Avaya</a></li>
+          <li><a href="https://example.com/link9">Min side admin</a></li>
+      </ul>
+      
+
+      </div>
+
+
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
+
+
+
+
