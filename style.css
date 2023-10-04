@@ -20,9 +20,9 @@ body {
   padding: 0;
 }
 
-header h1 {
+h1 {
   font-size: 3em;
-  letter-spacing: 15px;
+  letter-spacing: 25px;
   font-family: 'Raleway', sans-serif;
 }
 
