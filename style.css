@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Gentium+Book+Plus&family=Open+Sans:wght@300&family=Raleway&display=swap');
 
 body {
-  background-color: #d2b48c; /* Light brown background */
+  background-color: #f9f7da;
   color: #333; /* Dark text for better readability on light background */
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@ body {
   padding-top: 3%;
   margin: 0;
 }
+
 
 h1 {
   font-size: 3em;
@@ -39,8 +40,8 @@ h1:hover {
 }
 
 .content {
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.9); /* Lighter background color */
+  margin: 30px auto;
+  background-color: #f9f7da;
   padding: 30px;
   border-radius: 10px; /* Slightly rounded corners */
   max-width: 900px;
@@ -135,6 +136,8 @@ h1:hover {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .iframeblock .i-frame-block-container {
@@ -184,3 +187,92 @@ a:hover {
   }
 }
 
+
+
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* New/Modified CSS */
+.mySlides {
+  display: none; /* Hide slides by default */
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Display the first slide */
+.mySlides:first-of-type {
+  display: block;
+}
