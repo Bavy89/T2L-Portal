@@ -13,22 +13,29 @@
   <body>
 
 
-<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; background-color: #f9f7da;" id="mySidebar">
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px; background-color: #ffffe3;" id="mySidebar">
     <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-    <h3 class="w3-bar-item">Category 1</h3>
+    <h3 class="w3-bar-item">INTRO</h3>
     <a href="#introduksjon" class="w3-bar-item w3-button">Introduksjon</a>
+    <h3 class="w3-bar-item">FEILSØKING</h3>
     <a href="#Dekning" class="w3-bar-item w3-button">Dekning</a>
-    
-    <h3 class="w3-bar-item">Category 2</h3>
+    <a href="#feilsøke" class="w3-bar-item w3-button">Feilsøke</a>
+    <h3 class="w3-bar-item">VERKTØY</h3>
     <a href="#Linker" class="w3-bar-item w3-button">Linker</a>
-    <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    <a href="#effektivitet" class="w3-bar-item w3-button">Effektivitet</a>
+    <h3 class="w3-bar-item">VAKT</h3>
+    <a href="#fellesfeil" class="w3-bar-item w3-button">Fellesfeil</a>
+
+
+
+
     
     <!-- Additional links and categories... -->
 </div>
       
       <div class="w3-main" style="margin-left:200px">
-      <div class="w3-teal" style="background-color: #e1dfb9  !important;">
-        <button class="w3-button w3-teal w3-xlarge w3-hide-large" style="background-color: #e1dfb9  !important;" onclick="w3_open()">&#9776;</button>
+      <div class="w3-teal" style="background-color: #ffffe3  !important;">
+        <button class="w3-button w3-teal w3-xlarge w3-hide-large" style="background-color: #ffffe3  !important;" onclick="w3_open()">&#9776;</button>
         <div class="w3-container">
         </div>
       </div>
@@ -51,7 +58,7 @@
       <div class="content">
         <h2 id="introduksjon">Introduksjon</h2>
         <p>
-          Teknisk 2-linje fungere som et mellomledd mellom ICE
+          Teknisk 2-linje fungerer som et mellomledd mellom ICE
           kundeservice(1-linje) og ICE SOC (Operations, 3-linje), og håndtere
           alle typer tekniske problemstillinger kundene måtte oppleve!
         </p>
@@ -150,71 +157,71 @@ Lurer du på hvordan dekningen til kunder er? dette kan du enkelt sjekke med dek
     </div>
   --> 
 
-    <div class="content">
 
-      <h2 id="Linker">Linker</h2>
-        <p>
-Trenger du hjelp til å finne riktig vei?         </p>
-        <p>
-Her er noen linker som vi håper kan få deg på riktig sted!
-        </p>
-        <ul>
-          <li><a href="https://mtools.so.ice.local/login?next=/" target="_blank">Mtools 2.0</a></li>
-          <li><a href="https://kalix.ice.local/Kalix/#/login" target="_blank">Kalix</a></li>
-          <li><a href="https://iceno.service-now.com/login.do" target="_blank">Service Now</a></li>
-          <li><a href="https://teliano.service-now.com/csmv2" target="_blank">Telia Service Now</a></li>
-          <li><a href="https://iceno.freshdesk.com/a/dashboard/omnichannel/default" target="_blank">Buck</a></li>
-          <li><a href="https://manny.prod.ice.local/search?tab=customer" target="_blank">Manny</a></li>
-          <li><a href="https://nrdbn35.systor.st/" target="_blank">NRDB</a></li>
-          <li><a href="file://vnoro004.odin.local/home$/avaya/avayabo/index.html" target="_blank">Avaya</a></li>
-          <li><a href="https://idmanager.ice.no/CustomerCare" target="_blank">Min side admin</a></li>
-      </ul>
-      
+
+      <div class="content" id="feilsøke">
+
+        <div id="slider" class="slider">
+          <div class="slide" id="slide1">
+              <h2>Problem med meldinger</h2>
+              <p>Dersom kunden har en ruter som 2 år eller eldre, skal du tilby ny ruter med bindingstid og aktiv kampanje. Gammel avtale sies opp på dagen, og beløp blir automatisk justert på neste faktura. Husk å sjekke dekningskartet for å se om kunden får god dekning med den nye ruteren du tilbyr. Hvis kunden ikke ønsker å kjøpe ny ruter, eller dersom kunden har en ruter som er yngre enn 2 år, skal du feilsøke som vanlig. Fungerer ikke ruteren etter feilsøking må du eskalere til teknisk. 
+              </p>
+          </div>
+          <div class="slide" id="slide2">
+              <h2>Hva betyr lysene?</h2>
+              <p><b> Power lampen lyser hvit</b> betyr det at ruteren mottar strøm og fungerer som den skal. Blinker det hvit, er den i gang med å starte opp eller laster inn standard-konfigurasjon. Er lyset slukket, mottar ikke ruteren noe strøm.</p>
+              <p>InternettLyser lampen hvit, er ruteren koblet til internett, men det registreres ikke noen trafikk. Blinker lyset, er det trafikk som sendes og mottas via internett. Er lyset slutter, er tilkoblingen ikke klar, eller har feilet.</p>
+              <p>SignalstyrkeLyser lampen grønn, er SIM-kortet på plass og dekningen er bra. Lyser lampen orange, er SIM-kortet på plass, og dekningen er middels. Lyser lampen rød, er SIM-kortet på plass, men dekningen er dårlig eller SIM-kortet er låst med SIM-kode. Blinker den rød, er SIM-kortet på plass med det er ingen signal.</p>
+            </div>
+          <div class="slide" id="slide3">
+              <h2>Nullstille ruter</h2>
+              <p>Om alt har hengt seg opp og du kommer ikke på nett etter å ha skrudd din Ruter av og på, anbefaler vi at du prøver en fabrikkreset. En fabrikkreset tilbakestiller alle innstillinger tilbake til sånn som den var da du fikk ruteren. </p>
+          <p>Ved siden av av/på knappen vil du se et lite hull som heter Reset. Du trenger noe på størrelse med en binders eller nål for å nå knappen inni hullet. Hold denne knappen inne til du ser at lampene på ruteren blinker annenhver gang. Dette kan ta inntil 20 sekunder. </p>
+            </div>
+          <buttonSlide id="prev">Tilbake</buttonSlide>
+          <buttonSlide id="next">Neste</buttonSlide>
+      </div>
+
       </div>
 
       <div class="content">
 
-      <div class="slideshow-container">
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-          <img src="image1-slide.PNG" style="width: 100%;">
-          <div class="text">Caption Text</div>
+        <h2 id="Linker">Linker</h2>
+          <p>
+  Trenger du hjelp til å finne riktig vei?         </p>
+          <p>
+  Her er noen linker som vi håper kan få deg på riktig sted!
+          </p>
+          <ul>
+            <li><a href="https://mtools.so.ice.local/login?next=/" target="_blank">Mtools 2.0</a></li>
+            <li><a href="https://kalix.ice.local/Kalix/#/login" target="_blank">Kalix</a></li>
+            <li><a href="https://iceno.service-now.com/login.do" target="_blank">Service Now</a></li>
+            <li><a href="https://teliano.service-now.com/csmv2" target="_blank">Telia Service Now</a></li>
+            <li><a href="https://iceno.freshdesk.com/a/dashboard/omnichannel/default" target="_blank">Buck</a></li>
+            <li><a href="https://manny.prod.ice.local/search?tab=customer" target="_blank">Manny</a></li>
+            <li><a href="https://nrdbn35.systor.st/" target="_blank">NRDB</a></li>
+            <li><a href="file://vnoro004.odin.local/home$/avaya/avayabo/index.html" target="_blank">Avaya</a></li>
+            <li><a href="https://idmanager.ice.no/CustomerCare" target="_blank">Min side admin</a></li>
+            <li><a href="https://script.google.com/a/transcom.com/macros/s/AKfycbzZw-KCio7qY4f4FXB_BZPk77C8k99rKAU8BNeRlasea-2pk9xS/exec?gammel" target="_blank">Sjekk din effektivitet</a></li>
+
+        </ul>
         </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-          <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width: 100%;">
-          <div class="text">Caption Text</div>
+
+
+        <div class="content">
+          <h2 id="effektivitet">Effektivitet</h2>
+          <p>For Transcom skal alle tekniske saker være påbegynt innen 4 timer.</p>
+          <p>Kravet på teknisk 2 linje er å ha minst 75% effektivitet hver dag.</p>
+          <p>Dersom du ønsker å sjekke hvor mye effektivitet du ligger på så kan du gå inn på denne<a href="https://script.google.com/a/transcom.com/macros/s/AKfycbzZw-KCio7qY4f4FXB_BZPk77C8k99rKAU8BNeRlasea-2pk9xS/exec?gammel" target="_blank">denne linken.</a></p>
         </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width: 100%;">
-          <div class="text">Caption Text</div>
+
+        <div class="content">
+          <h2 id="fellesfeil">Fellesfeil</h2>
+
         </div>
-      
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width: 100%;">
-          <div class="text">Caption Text</div>
-        </div>
-      
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-    </div>
 
 
   </body>
-
   <script src="script.js"></script>
 </html>
 
