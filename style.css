@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Gentium+Book+Plus&family=Open+Sans:wght@300&family=Raleway&display=swap');
 
 body {
-  background-color: #1a1a1a;
-  color: #e6e6e6;
+  background-color: #d2b48c; /* Light brown background */
+  color: #333; /* Dark text for better readability on light background */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,20 +10,14 @@ body {
   height: 100vh;
   overflow-y: scroll;
   padding-top: 3%;
-
-}
-
-
-
-body {
   margin: 0;
-  padding: 0;
 }
 
 h1 {
   font-size: 3em;
-  letter-spacing: 25px;
+  letter-spacing: 5px; /* Reduced letter spacing for better readability */
   font-family: 'Raleway', sans-serif;
+  color: #4C6375; /* Darker color for title */
 }
 
 h1:hover {
@@ -31,17 +25,10 @@ h1:hover {
   font-style: italic;
 }
 
-
-
 .container {
   display: flex;
   align-items: center;
   margin-bottom: 2%;
-}
-
-.logo {
-  width: 60px; /* Adjust logo size */
-  height: 60px; /* Adjust logo size */
 }
 
 .logo img {
@@ -53,14 +40,9 @@ h1:hover {
 
 .content {
   margin: 0 auto;
-  background-color: rgba(
-    113,
-    113,
-    113,
-    0.7
-  ); /* Slightly white background color */
-  padding: 30px; /* Add some space around the text */
-  border-radius: 0px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.9); /* Lighter background color */
+  padding: 30px;
+  border-radius: 10px; /* Slightly rounded corners */
   max-width: 900px;
 }
 
@@ -68,34 +50,27 @@ h1:hover {
   max-width: 200px;
   display: flex;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 0px;
+  border-radius: 5px; /* Slightly rounded corners */
   overflow: hidden;
   padding: 10px;
 }
 
-.search-form input {
-  flex: 1;
-  padding: 10px 15px;
+.search-form input,
+.search-form button {
   border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
   outline: none;
-  border-radius: 0px 0 0 0px;
 }
 
 .search-form button {
-  padding: 10px 15px;
-  border: none;
-  background-color: #575757;
+  background-color: #4C6375; /* Darker color for button */
   cursor: pointer;
   color: white;
-  border-radius: 0 0px 0px 0;
 }
 
 .search-form button:hover {
   background-color: #ff0000;
-}
-
-.search-form i.fa-search {
-  margin: 0;
 }
 
 .w3-sidebar {
@@ -105,25 +80,25 @@ h1:hover {
   height: 100%;
 }
 
-
 #dekningskart {
-    height: 900px;
-    width: 100%;
+  height: 900px;
+  width: 100%;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: row; /* stacks children (forms) vertically */
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .iframeblock .i-frame-block-container {
-  filter: grayscale(100%); /* Turns the content black and white */
-  transition: filter 0.3s ease; /* Adds a smooth transition */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
   margin-top: 30px;
 }
 
 .iframeblock .i-frame-block-container:hover {
-  filter: none; /* Removes the filter on hover */
+  filter: none;
 }
 
 ul {
@@ -136,37 +111,30 @@ li {
 }
 
 a {
-  text-decoration: none; /* Removing default underline */
+  text-decoration: none;
   font-weight: 600;
-  padding: 5px 10px; /* Providing a little padding */
-  transition: all 0.3s ease; /* Adding transition effect for smooth changes */
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  color: #4C6375; /* Darker color for links */
 }
 
 a:hover {
-  background-color: #ff0000; /* Changing background color on hover */
-  color: #ffffff; /* Text color to white on hover */
+  background-color: #ff0000;
+  color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .search-form input {
+    width: 100%;
+  }
 
+  .form-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-@media (max-width: 768px) { /* for smaller screens */
-    .search-form input {
-        width: 100%; /* make input fields take full width */
-    }
-
-    .form-container {
-        display: flex;
-        flex-direction: column; /* stacks children (forms) vertically */
-        gap: 10px; /* space between forms */
-    }
-
-    .search-form {
-        max-width: 100%;
-
-      }
-
-      .iframeblock .i-frame-block-container {
-        filter: none; /* Display in color on mobile */
-    }
+  .search-form {
+    max-width: 100%;
+  }
 }
 
