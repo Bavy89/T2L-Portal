@@ -73,11 +73,57 @@ h1:hover {
   background-color: #ff0000;
 }
 
+/* Sidebar Styling */
 .w3-sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
+  width: 250px; /* Adjusted width */
+  background-color: #d2b48c; /* Light brown background */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Sidebar Header */
+.w3-sidebar h2 {
+  color: #4C6375; /* Darker text color */
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 20px; /* Added space below the header */
+}
+
+/* Sidebar Navigation Links */
+.w3-sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.w3-sidebar nav li {
+  margin-bottom: 15px;
+}
+
+.w3-sidebar nav a {
+  color: #4C6375; /* Darker link color */
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.w3-sidebar nav a:hover {
+  color: #ff0000; /* Red color on hover */
+}
+
+/* Link Categories */
+.w3-sidebar .category {
+  margin-top: 20px; /* Added space above each category */
+}
+
+.w3-sidebar .category h3 {
+  color: #4C6375; /* Darker text color */
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px; /* Added space below the category title */
 }
 
 #dekningskart {
