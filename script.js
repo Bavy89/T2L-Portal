@@ -1,3 +1,4 @@
+//sidebar
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
 }
@@ -6,6 +7,7 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 
+//Smooth anchor link
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -37,6 +39,3 @@ document.getElementById('prev').addEventListener('click', () => {
     currentSlide = (currentSlide - 2 + totalSlides) % totalSlides + 1;
     showSlide(currentSlide);
 });
-
-
-

@@ -1,9 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=Gentium+Book+Plus&family=Open+Sans:wght@300&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Gasoek+One&family=Gentium+Book+Plus&family=Open+Sans:wght@300&family=Raleway&display=swap");
+:root {
+  --primary-color: #4c6375;
+  --hover-color: #ff0000;
+  --background-color: #ffffe3;
+  --dark-text: #333;
+  --light-text: #ffffff;
+  --border-radius-small: 5px;
+  --border-radius-medium: 10px;
+  --font-family-sans: "Raleway", sans-serif;
+  --font-family-mono: "Courier Prime", monospace;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Gasoek+One&family=Gentium+Book+Plus&family=Open+Sans:wght@300&family=Raleway&family=Courier+Prime&display=swap");
 
 body {
-  background-color: #ffffe3;
-  color: #333; /* Dark text for better readability on light background */
+  background-color: var(--background-color);
+  color: var(--dark-text);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,22 +27,18 @@ body {
 
 h1 {
   font-size: 3em;
-  letter-spacing: 5px; /* Reduced letter spacing for better readability */
-  font-family: "Raleway", sans-serif;
-  color: #4c6375; /* Darker color for title */
+  letter-spacing: 5px;
+  font-family: var(--font-family-sans);
+  color: var(--primary-color);
 }
 
 h1:hover {
-  color: #ff0000;
+  color: var(--hover-color);
   font-style: italic;
 }
 
-h3 {
-  font-family: "Courier Prime", monospace !important;
-}
-
-h2 {
-  font-family: "Courier Prime", monospace !important;
+h3, h2 {
+  font-family: var(--font-family-mono) !important;
 }
 
 .container {
@@ -49,9 +56,9 @@ h2 {
 
 .content {
   margin: 30px auto;
-  background-color: #ffffe3;
+  background-color: var(--background-color);
   padding: 30px;
-  border-radius: 10px; /* Slightly rounded corners */
+  border-radius: var(--border-radius-medium);
   max-width: 900px;
 }
 
@@ -59,7 +66,7 @@ h2 {
   max-width: 200px;
   display: flex;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px; /* Slightly rounded corners */
+  border-radius: var(--border-radius-small);
   overflow: hidden;
   padding: 10px;
 }
@@ -68,41 +75,38 @@ h2 {
 .search-form button {
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: var(--border-radius-small);
   outline: none;
 }
 
 .search-form button {
-  background-color: #4c6375; /* Darker color for button */
+  background-color: var(--primary-color);
   cursor: pointer;
-  color: white;
+  color: var(--light-text);
 }
 
 .search-form button:hover {
-  background-color: #ff0000;
+  background-color: var(--hover-color);
 }
 
-/* Sidebar Styling */
 .w3-sidebar {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 250px; /* Adjusted width */
-  background-color: #d2b48c; /* Light brown background */
+  width: 250px;
+  background-color: #d2b48c;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Sidebar Header */
 .w3-sidebar h2 {
-  color: #4c6375; /* Darker text color */
+  color: var(--primary-color);
   font-size: 24px;
   letter-spacing: 2px;
-  margin-bottom: 20px; /* Added space below the header */
+  margin-bottom: 20px;
 }
 
-/* Sidebar Navigation Links */
 .w3-sidebar nav ul {
   list-style-type: none;
   padding: 0;
@@ -113,22 +117,25 @@ h2 {
 }
 
 .w3-sidebar nav a {
-  color: #4c6375; /* Darker link color */
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 18px;
-  transition: color 0.3s ease; /* Smooth color transition */
+  transition: color 0.3s ease;
 }
 
-/* Link Categories */
+.w3-sidebar nav a:hover {
+  color: var(--hover-color);
+}
+
 .w3-sidebar .category {
-  margin-top: 20px; /* Added space above each category */
+  margin-top: 20px;
 }
 
 .w3-sidebar .category h3 {
-  color: #4c6375; /* Darker text color */
+  color: var(--primary-color);
   font-size: 20px;
   letter-spacing: 1px;
-  margin-bottom: 10px; /* Added space below the category title */
+  margin-bottom: 10px;
 }
 
 #dekningskart {
@@ -168,12 +175,12 @@ a {
   font-weight: 600;
   padding: 5px 10px;
   transition: all 0.3s ease;
-  color: #4c6375; /* Darker color for links */
+  color: var(--primary-color);
 }
 
 a:hover {
-  background-color: #ff0000;
-  color: #ffffff;
+  background-color: var(--hover-color);
+  color: var(--light-text);
 }
 
 @media (max-width: 768px) {
@@ -191,8 +198,9 @@ a:hover {
   }
 }
 
+
 .slider {
-  width: 900px;
+  width: 100%;
   height: 500px;
   position: relative;
   overflow: hidden;
@@ -224,8 +232,7 @@ buttonSlide {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #ffffe3;
-  border: none;
+  background-color: var(--background-color);  border: none;
   padding: 10px;
   cursor: pointer;
 }
