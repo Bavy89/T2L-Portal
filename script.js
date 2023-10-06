@@ -39,3 +39,24 @@ document.getElementById('prev').addEventListener('click', () => {
     currentSlide = (currentSlide - 2 + totalSlides) % totalSlides + 1;
     showSlide(currentSlide);
 });
+
+function openUrl(form, url) {
+  var inputValue = form.T1.value.trim();
+  if(inputValue === "") {
+      alert("Vennligst skriv noe i søkefeltet før du søker.");
+      return false;
+  }
+  window.open(url + inputValue);
+  return false; // Prevent form submission
+}
+
+function formatText(command, button) {
+  document.execCommand(command, false, '');
+  updateToolbar();
+}
+
+function updateToolbar() {
+  document.getElementById('bold').classList.toggle('active', document.queryCommandState('bold'));
+  document.getElementById('italic').classList.toggle('active', document.queryCommandState('italic'));
+  document.getElementById('underline').classList.toggle('active', document.queryCommandState('underline'));
+}

@@ -244,3 +244,32 @@ buttonSlide {
 #next {
   right: 10px;
 }
+
+
+.toolbar {
+  background-color: #7d8673;
+  padding: 10px;
+  color: white;
+  overflow: auto;
+}
+.editor {
+  width: 100%;
+  min-height: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover,
+button.active {
+  color: #ff0000;
+}

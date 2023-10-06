@@ -23,6 +23,8 @@
     <h3 class="w3-bar-item">VERKTØY</h3>
     <a href="#Linker" class="w3-bar-item w3-button">Linker</a>
     <a href="#effektivitet" class="w3-bar-item w3-button">Effektivitet</a>
+    <a href="#board" class="w3-bar-item w3-button">Board</a>
+
     <h3 class="w3-bar-item">VAKT</h3>
     <a href="#fellesfeil" class="w3-bar-item w3-button">Fellesfeil</a>
 </div>
@@ -93,29 +95,28 @@
 <div class="content">
   <h2>Søk etter ID eller finn noe i kunnskapsdatabasen</h2>
 
-      <div class="form-container">
-    
-        <form class="search-form" style="text-align: left">
-            <input name="T1" size="10" type="text" placeholder="Søk i wiki">
-            <button type="submit" onclick="window.open('https://iceno.freshdesk.com/support/search/solutions?term='+this.form.T1.value);">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
-    
-        <form class="search-form" style="text-align: left">
-            <input name="T1" size="10" type="text" placeholder="Buck ID">
-            <button type="submit" onclick="window.open('https://iceno.freshdesk.com/a/tickets/'+this.form.T1.value+'');">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
+  <div class="form-container">
+    <form class="search-form" style="text-align: left" onsubmit="return openUrl(this, 'https://iceno.freshdesk.com/support/search/solutions?term=');">
+        <input name="T1" size="10" type="text" placeholder="Søk i wiki">
+        <button type="submit">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
 
-        <form class="search-form" style="text-align: left">
-            <input name="T1" size="10" type="text" placeholder="Snow ID">
-            <button type="submit" onclick="window.open('https://iceno.service-now.com/nav_to.do?uri=%2F$sn_global_search_results.do%3Fsysparm_search%3D'+this.form.T1.value+'');">
-                <i class="fa fa-search"></i>
-            </button>
-        </form>
-      </div>
+    <form class="search-form" style="text-align: left" onsubmit="return openUrl(this, 'https://iceno.freshdesk.com/a/tickets/');">
+        <input name="T1" size="10" type="text" placeholder="Buck ID">
+        <button type="submit">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+
+    <form class="search-form" style="text-align: left" onsubmit="return openUrl(this, 'https://iceno.service-now.com/nav_to.do?uri=%2F$sn_global_search_results.do%3Fsysparm_search%3D');">
+        <input name="T1" size="10" type="text" placeholder="Snow ID">
+        <button type="submit">
+            <i class="fa fa-search"></i>
+        </button>
+    </form>
+</div>
 
     </div>
 
@@ -207,7 +208,34 @@ Lurer du på hvordan dekningen til kunder er? dette kan du enkelt sjekke med dek
         </div>
 
         <div class="content">
+          <h2 id="board">Board</h2>
+          <div class="toolbar">
+            <button onclick="formatText('bold', this)" id="bold">Bold</button>
+            <button onclick="formatText('italic', this)" id="italic">Italic</button>
+            <button onclick="formatText('underline', this)" id="underline">Underline</button>
+        </div>
+        <div class="editor" contenteditable="true" onkeyup="updateToolbar()" onclick="updateToolbar()">
+            Her kan du skrive hva du vill...
+        </div>
+        </div>
+
+
+        <div class="content">
           <h2 id="fellesfeil">Fellesfeil</h2>
+          <p><strong>Har det oppstått problemer med systemer eller linjene?</strong></p>
+    <p>Fortvil ikke, denne guiden kan hjelpe deg :)</p>
+
+    <p><strong>Kommunikasjon er Nøkkelen</strong></p>
+    <p>Først og fremst så er det viktig med kommunikasjon, og derfor er du også nødt til å holde dine kollegaer på teamet ditt oppdatert til enhver tid. Husk å følge med i viktige chatgrupper og hold dialogen med SOC og Teamleder.</p>
+
+    <p><strong>Informasjonsspredning</strong></p>
+    <p>Deretter må du sørge for at du har nok info som du kan videreformidle til ice.</p>
+
+    <p><strong>Håndtering av Linjefeil</strong></p>
+    <p>Er det feil med linjene? Da må du også prate med IT avdelingen til Transcom. De kan nemlig rute samtaler via et annet nummer inntil feilen er løst.</p>
+
+    <p><strong>Systemfeilhåndtering</strong></p>
+    <p>Er det feil med systemer? Da må du få nok info og også teste det selv før du sender det videre til helpdesk.</p>
 
         </div>
 
