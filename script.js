@@ -60,3 +60,27 @@ function updateToolbar() {
   document.getElementById('italic').classList.toggle('active', document.queryCommandState('italic'));
   document.getElementById('underline').classList.toggle('active', document.queryCommandState('underline'));
 }
+
+//Show more button
+document.addEventListener("DOMContentLoaded", function () {
+  const showMoreButton = document.getElementById("show-more-button");
+  const hiddenList = document.querySelector(".hidden-list");
+
+  showMoreButton.addEventListener("click", function () {
+    // Toggle the 'visible' class to control visibility
+    if (hiddenList.classList.contains("visible")) {
+      hiddenList.classList.remove("visible");
+      showMoreButton.textContent = "Klikk her for å se";
+    } else {
+      hiddenList.classList.add("visible");
+      showMoreButton.textContent = "Vis mindre";
+    }
+  });
+});
+
+
+//flip website
+document.querySelector('.SMN_effect-67 a').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent the default anchor link behavior
+  document.body.classList.toggle('flip');
+});
