@@ -208,6 +208,7 @@ h3, h2 {
   filter: grayscale(100%);
   transition: filter 0.3s ease;
   margin-top: 30px;
+
 }
 
 .iframeblock .i-frame-block-container:hover {
@@ -762,5 +763,33 @@ table.customTable {
   
   table.customTable thead {
 	background-color: #ffcd00;
+	height: 50px;
+  }
+  
+
+
+  
+
+table.EapTable {
+	width: 100%;
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+	border-width: 2px;
+	border-color: #7ea8f8;
+	border-style: solid;
+	color: #000000;
+  }
+  
+  table.EapTable td, table.EapTable th {
+	border-width: 2px;
+	border-color: #ffcd00;
+	border-style: solid;
+	padding: 5px;
+  }
+  
+  table.EapTable thead {
+	background-color: #ffcd00;
+	height: 50px;
+
   }
   

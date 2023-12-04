@@ -21,6 +21,7 @@
     <a href="#Dekning" class="w3-bar-item w3-button">Dekning</a>
     <a href="#feilsøke" class="w3-bar-item w3-button">Feilsøke</a>
     <h3 class="w3-bar-item">VERKTØY</h3>
+    <a href="#mbb" class="w3-bar-item w3-button">MBB</a>
     <a href="#Linker" class="w3-bar-item w3-button">Linker</a>
     <a href="#effektivitet" class="w3-bar-item w3-button">T2L Artikler</a>
     <a href="#effektivitet" class="w3-bar-item w3-button">Effektivitet</a>
@@ -214,40 +215,29 @@ Lurer du på hvordan dekningen til kunder er? dette kan du enkelt sjekke med dek
   </div>
 
   <div class="content">
-    <h2 id="Linker">Lagerstatus MBB</h2>
-    <table class="customTable">
-      <thead>
-        <tr>
-          <th>Header 1</th>
-          <th>Header 2</th>
-          <th>Header 3</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Row 1, Cell 1</td>
-          <td>Row 1, Cell 2</td>
-          <td>Row 1, Cell 3</td>
-        </tr>
-        <tr>
-          <td>Row 2, Cell 1</td>
-          <td>Row 2, Cell 2</td>
-          <td>Row 2, Cell 3</td>
-        </tr>
-        <tr>
-          <td>Row 3, Cell 1</td>
-          <td>Row 3, Cell 2</td>
-          <td>Row 3, Cell 3</td>
-        </tr>
-        <tr>
-          <td>Row 4, Cell 1</td>
-          <td>Row 4, Cell 2</td>
-          <td>Row 4, Cell 3</td>
-        </tr>
-      </tbody>
-    </table>    
+    <h2 id="mbb">MBB filer</h2>
+
+    <h3>Oppdateringsfil til SmartRuter</h3>
+    <a href="https://drive.google.com/file/d/1Qty1cJQJAZcJ8fYhfmR6sIjAL8BSky5g/view?usp=sharing" target="_blank" rel="noopener noreferrer" download="YOUR_FILE_NAME">Klikk her for å laste ned</a>
 
   </div>
+
+
+  <div class="content">
+    <h2 id="Linker">Lagerstatus MBB</h2>
+    <div id="lastSyncTime" style="text-align: right; font-size: small;"></div>
+    <table class="customTable">
+        <thead>
+            <tr>
+                <th>Material No</th>
+                <th>Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="stockTableBody">
+        </tbody>
+    </table>
+</div>
 
 
       <div class="content">
@@ -356,10 +346,20 @@ Lurer du på hvordan dekningen til kunder er? dette kan du enkelt sjekke med dek
         </div>
 
 
+      </div>
+
         <div class="content">
           <h2 id="fellesfeil">Fellesfeil</h2>
-
-          <iframe id="myIframe" frameborder="0" height="490" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQUEdVVpI-5n1Am1z0FMjIkEP4FndbS3dEQX8M-9fkKqXNEkp1AusiJruHFac_Qd9tLoRxu-2TjVSw2/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%"></iframe>
+          
+          <table class="EapTable">
+            <thead>
+                <tr>
+                    <th>Dato</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+        </table>
+          
 
           <p><strong>Har det oppstått problemer med systemer eller linjene?</strong></p>
     <p>Fortvil ikke, denne guiden kan hjelpe deg :)</p>
@@ -379,8 +379,10 @@ Lurer du på hvordan dekningen til kunder er? dette kan du enkelt sjekke med dek
         </div>
 
   </body>
+  <script src="data.js"></script>
   <script src="script.js"></script>
 </html>
+
 
 
 
